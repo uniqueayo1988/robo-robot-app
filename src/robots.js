@@ -24,15 +24,39 @@ export const robots = [
     email: 'lonan@kyle.com'
   },
   {
-    id: 1,
+    id: 5,
     name: 'Amy Chuks',
     username: 'amyc',
     email: 'amy@chuks.com'
   },
   {
-    id: 1,
+    id: 6,
     name: 'Marvin Iyke',
     username: 'marvini',
     email: 'marvin@iyke.com'
-  }
+  },
+  {
+    id: 7,
+    name: 'Mark Edom',
+    username: 'marke',
+    email: 'mark@edom.com'
+  },
+  {
+    id: 8,
+    name: 'Kyle Hank',
+    username: 'kyleh',
+    email: 'kyle@hank.com'
+  },
+  {
+    id: 9,
+    name: 'Yaw Doe',
+    username: 'yawd',
+    email: 'yaw@doe.com'
+  },
+  {
+    id: 10,
+    name: 'Opera Ray',
+    username: 'operar',
+    email: 'opera@ray.com'
+  },
 ]
