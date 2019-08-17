@@ -22,12 +22,17 @@ export class App extends Component {
     });
     return (
       <div className="tc">
-        <h1>RoboFriends</h1>
+        <h1 style={headerStyle} className="f1">RoboFriends</h1>
         <Searchbox search={this.onSearchChange} />
         <CardList robots={filteredRobots} />
       </div>
     );
   }
+}
+
+const headerStyle = {
+  fontWeight: '700',
+  color: '#0ccac4'
 }
 
 export default App
