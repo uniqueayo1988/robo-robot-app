@@ -4,20 +4,27 @@ import CardList from './components/CardList';
 import Searchbox from "./components/Searchbox";
 export class App extends Component {
   state={
-    robots: []
+    robots,
+    searchfield: ''
   }
-  
-  componentDidMount () {
+
+  onSearchChange = (event) => {
     this.setState({
-      robots
-    })
+      searchfield: event.target.value
+    });
   }
+
   render() {
+    const filteredRobots = this.state.robots.filter(robot => {
+      return robot.name
+        .toLowerCase()
+        .includes(this.state.searchfield.toLowerCase());
+    });
     return (
-      <div className='tc'>
+      <div className="tc">
         <h1>RoboFriends</h1>
-        <Searchbox />
-        <CardList robots={this.state.robots} />
+        <Searchbox search={this.onSearchChange} />
+        <CardList robots={filteredRobots} />
       </div>
     );
   }
